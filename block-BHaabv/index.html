@@ -1,0 +1,217 @@
+<!-- writeCode
+
+- Create a layout according to the design shown below.
+
+![Backgrounds and gradients level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/background-and-gradients/ex-2.jpg)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Work on typography in detail. -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Social Media Dashboard</title>
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://kit.fontawesome.com/67427b16f1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="container">
+            <div class="nav">
+                <nav>
+                    <h1>Social Media Dashboard</h1>
+                    <p>Total Followers : 23,000</p>
+                </nav>
+                <nav class="dark-toggle">
+                    <p>Dark Mode</p>
+                    <div class="toggle"></div>
+                    <div class="circle-toggle"></div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="total-count container">
+                <div class="box">
+                    <div class="username">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <p>@Ayush_Kamboj</p>
+                    </div>
+                    <h3>1987</h3>
+                    <p class="letter-space">FOLLOWERS</p>
+                    <div class="inc-today">
+                        <i class="fas fa-sort-up"></i>
+                        <p class="inc-green">12 Today</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="username">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <p>@Ayush_Kamboj</p>
+                    </div>
+                    <h3>1044</h3>
+                    <p class="letter-space">FOLLOWERS</p>
+                    <div class="inc-today">
+                        <i class="fas fa-sort-up"></i>
+                        <p class="inc-green">99 Today</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="box">
+                    <div class="instagram-border-div"></div>
+                    <div class="username">
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <p>@Ayush_Kamboj</p>
+                    </div>
+                    <h3>11 K</h3>
+                    <p class="letter-space">FOLLOWERS</p>
+                    <div class="inc-today">
+                        <i class="fas fa-sort-up"></i>
+                        <p class="inc-green">1099 Today</p>
+                    </div>
+                </div>
+
+
+                <div class="box youtube">
+                    <div class="username">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <p>@Ayush_Kamboj</p>
+                    </div>
+                    <h3>8239</h3>
+                    <p class="letter-space">SUBSCRIBERS</p>
+                    <div class="inc-today" id="red">
+                        <i class="fas fa-sort-down"></i>
+                        <p class="inc-green red">144 Today</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="heading-section container">
+                <h2>Overview - Today</h2>
+            </section>
+
+            <section class="total-count container overview">
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Page Views</p>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>87</h3>
+                        <div class="inc-today">
+                            <i class="fas fa-sort-up"></i>
+                            <p class="inc-green">3%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Likes</p>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>52</h3>
+                        <div class="inc-today icon-red">
+                            <i class="fas fa-sort-down"></i>
+                            <p class="inc-green">2%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Likes</p>
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>5462</h3>
+                        <div class="inc-today">
+                            <i class="fas fa-sort-up"></i>
+                            <p class="inc-green">57%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Profile Views</p>
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>52K</h3>
+                        <div class="inc-today">
+                            <i class="fas fa-sort-up"></i>
+                            <p class="inc-green">37%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="total-count container overview">
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Retweets</p>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>117</h3>
+                        <div class="inc-today">
+                            <i class="fas fa-sort-up"></i>
+                            <p class="inc-green">30%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box">
+                    <div class="username username-btm">
+                        <p>Likes</p>
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>507</h3>
+                        <div class="inc-today">
+                            <i class="fas fa-sort-up"></i>
+                            <p class="inc-green">53%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box youtube">
+                    <div class="username username-btm">
+                        <p>Likes</p>
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>107</h3>
+                        <div class="inc-today icon-red">
+                            <i class="fas fa-sort-down"></i>
+                            <p class="inc-green">19%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box end-box youtube">
+                    <div class="username username-btm">
+                        <p>Total Views</p>
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                    <div class="count-inc-dec">
+                        <h3>1407</h3>
+                        <div class="inc-today icon-red">
+                            <i class="fas fa-sort-down"></i>
+                            <p class="inc-green">12%</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
